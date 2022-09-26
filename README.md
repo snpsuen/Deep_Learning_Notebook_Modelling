@@ -34,19 +34,27 @@ This is a short how-to about building and using a convolution neural network (CN
     cd /home/jovyan/model
     # Copy from Google Drive via the shared link:
     wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1miITBZYZmfBq29HAdB4rQy4MykTtowgt' -O CNN_Fashion_Colab_Model01-20220925T180121Z-001.zip
+    
     # Alternativley, copy from my Github repo, Deep_Learning_Notebook_Nodelling:
     wget https://github.com/snpsuen/Deep_Learning_Notebook_Modelling/raw/main/model/CNN_Fashion_Colab_Model01-20220925T180121Z-001.zip
+    
     upzip CNN_Fashion_Colab_Model01-20220925T180121Z-001.zip
     
   <p>
-    (e) Copy the model using notebook, namely Use_CNN_Fashion_Model_Jupyter.ipynb, from the same Github repo to the Jupyter container.
+    (e) Copy the model user notebook, namely Use_CNN_Fashion_Model_Jupyter.ipynb, from the same Github repo to the Jupyter container.
     
     cd /home/jovyan/notebook
     wget https://raw.githubusercontent.com/snpsuen/Deep_Learning_Notebook_Modelling/main/notebook/Use_CNN_Fashion_Model_Jupyter.ipynb
     
   <p>
-    (f)
+    (f) Load the notebook into the Jupyter workspace and run through its code cells. In particular, the notebook goes on to load imported model and predict about a stored sample image, e.g. /home/jovyan/input/fashion_example01.jpg.
+  <p>
+    (g) After shutting down the container, you may opt to retain the model and notebook persistently by committing the changes to a new Jupyter docker image, e.g in my case,
     
+    docker commit jtnotebook-container snpsuen/jupyter-tensorflow-opencv:v05
+    docker login -u snpsuen
+    docker push snpsuen/jupyter-tensorflow-opencv:v05
     
+  <p>
     
     
