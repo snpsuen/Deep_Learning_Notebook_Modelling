@@ -8,7 +8,7 @@ This is a short how-to about building and using a convolution neural network (CN
   <p>
     (a) Assume you have a Google gmail account to start with in order to use Colab and Google Drive. 
   <p>
-    (b) Load a model builder notebook into Colab. I have already created a notebook named Build_CNN_Fashion_Colab.ipynb and shared it via this link, https://colab.research.google.com/drive/1A4wf415wuLsrUOi9jgIGw7X9dcCLFZhz?usp=sharing. Just open this link to refer to the notebook.
+    (b) Load a model builder notebook into Colab. I have already created a notebook named Build_CNN_Fashion_Colab.ipynb and shared it via this link, https://colab.research.google.com/drive/1A4wf415wuLsrUOi9jgIGw7X9dcCLFZhz?usp=sharing. Just click it to access the notebook itself.
   <p>
     (c) You are advised to make a copy of the notebook before running through its code cells on Colab. Meanwhile, you may want to upload a sample clothing image to the Google drive. For example, download https://github.com/snpsuen/Deep_Learning_Notebook_Modelling/raw/main/input/fashion_example01.jpg from my Github repo and upload it to your Google drive. Please note that the notebook maps Google Drive root to "/content/drive/My Drive".
   <p>
