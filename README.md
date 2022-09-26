@@ -17,4 +17,8 @@ This is a short how-to about building and using a convolution neural network (CN
   (e) Run the last code cell of the notebook to save the model to a folder named "CNN_Fashion_Colab_Model01" at the root of your Google Drive.
 <p>
   (f) Finally, copy out and zip up the model folder and upload the zip file to your Google Drive. The model will be transfered as a zip file to a Jupyter container in Phase 2.
-
+  
+### 2. Use the model in a Jupyter container
+  <p>
+    (a) I have pre-baked a suitable jupyter-tensorflow docker image that comes with all the necessary packages for running the CNN model. It is ready to be pulled as snpsuen/jupyter-tensorflow-opencv:v04 from hub.docker.com.
+    (b) Run the 
