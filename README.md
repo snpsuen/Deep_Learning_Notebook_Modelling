@@ -16,7 +16,7 @@ This is a short how-to about building and using a convolution neural network (CN
   <p>
     (e) Run the last code cell of the notebook to save the model to a folder named "CNN_Fashion_Colab_Model01" at the root of your Google Drive.
   <p>
-    (f) Finally, copy out and zip up the model folder, upload the zip file to your Google Drive. The model will be transfered as a zip file to a Jupyter container in Phase 2.
+    (f) Finally, copy out and zip up the model folder, upload it to your Google Drive. Share the zip file via a public web link, e.g. https://drive.google.com/file/d/1miITBZYZmfBq29HAdB4rQy4MykTtowgt/view?usp=sharing. The model will be transfered as a zip file to a Jupyter container in Phase 2. 
   
 ### 2. Use the model in a Jupyter container
   <p>
@@ -24,11 +24,27 @@ This is a short how-to about building and using a convolution neural network (CN
   <p>
     (b) Run a Jupyter container on snpsuen/jupyter-tensorflow-opencv:v04 in a Linux host.
     
-    
     docker run -it --name jtnotebook-container -p 8888:8888 snpsuen/jupyter-tensorflow-opencv:v04
     
+  <p>
+    (c) Open http://<linux-host>:8888 or a port-forwarding URL like http://localhost:8888, to connect to a Jupyter notebook server. Use the randomly given token number to login, e.g. http://127.0.0.1:8888/lab?token=36e45f566dda06cc50aae6eabea14c8a612e09f9b17d2277
+  <p>
+    (d) Land in the Jupyter portal and open a terminal to the container. Copy the model zip file, CNN_Fashion_Colab_Model01-20220925T180121Z-001.zip, from Google drive or my Github repo to /home/jovyan/model and unzip it afterward.
+    
+    cd /home/jovyan/model
+    # Copy from Google Drive via the shared link:
+    wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1miITBZYZmfBq29HAdB4rQy4MykTtowgt' -O CNN_Fashion_Colab_Model01-20220925T180121Z-001.zip
+    
+    # Alternativley, copy from my Github repo:
+    wget https://github.com/snpsuen/Deep_Learning_Notebook_Modelling/raw/main/model/CNN_Fashion_Colab_Model01-20220925T180121Z-001.zip
+    
+    upzip CNN_Fashion_Colab_Model01-20220925T180121Z-001.zip
     
   <p>
-    (c) Open http://<linux-host>:8888 or a port-forwarding URL like http://localhost:8888, to connect to a Jupyter note book server. Use the randomly given token number to login, e.g. http://127.0.0.1:8888/lab?token=36e45f566dda06cc50aae6eabea14c8a612e09f9b17d2277
+    (e) Copy a notebook named Use 
+    
+    https://raw.githubusercontent.com/snpsuen/Deep_Learning_Notebook_Modelling/main/notebook/Use_CNN_Fashion_Model_Jupyter.ipynb
+    
+    
     
     
