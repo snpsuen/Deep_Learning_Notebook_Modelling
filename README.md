@@ -1,5 +1,5 @@
 # Deep_Learning_Notebook_Modelling
-This is a short how-to on building and using a convolution neural network (CNN) deep learning model through Jupyter notebooks. The model is to be trained with the well known Fashion MNIST dataset to classify clothing images into the designated categories.
+This is a short how-to about building and using a convolution neural network (CNN) deep learning model through Jupyter notebooks. The model is to be trained with the well known Fashion MNIST dataset to classify clothing images into the designated categories.
 <p>
   1. Build, evaluate or tweak a CNN model on Google Colab <br>
   2. Use the model on a Jupyter container of a prebaked docker image.
@@ -10,4 +10,11 @@ This is a short how-to on building and using a convolution neural network (CNN) 
 <p>
   (b) Load a model builder notebook into Colab. I have already created a notebook named Build_CNN_Fashion_Colab.ipynb and shared it via this link, https://colab.research.google.com/drive/1A4wf415wuLsrUOi9jgIGw7X9dcCLFZhz?usp=sharing. Just open this link to refer to the notebook.
 <p>
-  (c) You are advised to make a copy of the notebook before running through its code cells on Colab. 
+  (c) You are advised to make a copy of the notebook before running through its code cells on Colab. Meanwhile, you may want to upload a sample clothing image to the Google drive. For example, download https://github.com/snpsuen/Deep_Learning_Notebook_Modelling/raw/main/input/fashion_example01.jpg from my Github repo and upload it to your Google drive. Please note that the notebook maps Google Drive root to "/content/drive/My Drive".
+<p>
+  (d) Run the notebook by going through each code cell except the last one, until you are satisifed with the prediction or observe an accuracy > 0.9. You may tweak the model by add one or more Conv2d layers like Conv2d(128, (3,3), ...) or increasing the number of epochs or batch size.
+<p>
+  (e) Run the last code cell of the notebook to save the model to a folder named "CNN_Fashion_Colab_Model01" at the root of your Google Drive.
+<p>
+  (f) Finally, copy out and zip up the model folder and upload the zip file to your Google Drive. The model will be transfered as a zip file to a Jupyter container in Phase 2.
+
