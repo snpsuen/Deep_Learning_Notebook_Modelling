@@ -1,9 +1,9 @@
 # Deep_Learning_Notebook_Modelling
 This is a short how-to on building and using a convolution neural network (CNN) deep learning model through Jupyter notebooks. The model is to be trained with the well known Fashion MNIST dataset to classify clothing images into the designated categories.
 <p>
-  1. Build, evaluate or tweak a CNN model on Google Colab
+  1. Build, evaluate or tweak a CNN model on Google Colab <br>
   2. Use the model on a Jupyter container of a prebaked docker image.
  
-## 1. Build the model on Colab
+### 1. Build the model on Colab
 <p>
-  Assume
+  1.1  Assume you've already had a Google gmail account to use Google Drive and Colab.
