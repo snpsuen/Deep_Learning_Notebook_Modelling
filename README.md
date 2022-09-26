@@ -24,9 +24,9 @@ This is a short how-to about building and using a convolution neural network (CN
   <p>
     (b) Run a Jupyter container on snpsuen/jupyter-tensorflow-opencv:v04 in a Linux host.
     
-    ~~~
+    
     docker run -it --name jtnotebook-container -p 8888:8888 snpsuen/jupyter-tensorflow-opencv:v04
-    ~~~
+    
     
   <p>
     (c) Open http://<linux-host>:8888 or a port-forwarding URL like http://localhost:8888, to connect to a Jupyter note book server. Use the randomly given token number to login, e.g. http://127.0.0.1:8888/lab?token=36e45f566dda06cc50aae6eabea14c8a612e09f9b17d2277
